@@ -25,9 +25,9 @@ namespace PruebaSlab.Models.DB
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Proyecto> Proyecto { get; set; }
         public virtual DbSet<Rol> Rol { get; set; }
         public virtual DbSet<Tarea> Tarea { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
-        public virtual DbSet<Proyecto> Proyecto { get; set; }
     }
 }

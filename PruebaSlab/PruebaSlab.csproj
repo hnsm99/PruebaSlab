@@ -104,8 +104,8 @@
     <Content Include="Global.asax" />
     <Content Include="Models\DB\SlabModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SlabModel.Context.cs</LastGenOutput>
       <DependentUpon>SlabModel.edmx</DependentUpon>
+      <LastGenOutput>SlabModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\DB\SlabModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PruebaSlab.Transaction;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,11 +11,12 @@ namespace PruebaSlab.Controllers
     [RoutePrefix("api/proyecto")]
     public class ProyectoController : ApiController
     {
+        ProyectoTransaction PT = new ProyectoTransaction();
         [HttpGet]
-        [Route("")]
+        [Route("GetObj")]
         public IHttpActionResult Index()
         {
-            return null;
+            return Ok(PT.Index(null));
         }
     }
 }

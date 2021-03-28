@@ -17,7 +17,7 @@ namespace PruebaSlab.Models.DB
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
-        public string Fecha_Ejecucion { get; set; }
+        public System.DateTime Fecha_Ejecucion { get; set; }
         public int Id_Proyecto { get; set; }
         public bool Estado { get; set; }
     

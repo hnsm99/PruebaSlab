@@ -27,9 +27,10 @@ namespace PruebaSlab.Models.DB
         public string Usuario1 { get; set; }
         public string Correo { get; set; }
         public string Contrasena { get; set; }
+        public bool Estado { get; set; }
     
-        public virtual Rol Rol { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Proyecto> Proyecto { get; set; }
+        public virtual Rol Rol { get; set; }
     }
 }

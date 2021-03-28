@@ -12,9 +12,10 @@ namespace PruebaSlab.Models.Proyecto
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public DateTime FechaInicio { get; set; }
-        public DateTime FechaFin { get; set; }
+        public DateTime? FechaFin { get; set; }
         public int Id_Operario { get; set; }
         public bool Estado { get; set; }
-        public List<UsuarioList> LstUsuarios { get; set; }
+        public List<EstadoList> LstEstado{get;set;}
+        public List<UsuarioList> LstOperadores { get; set; }
     }
 }
