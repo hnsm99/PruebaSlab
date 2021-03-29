@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "b4d74afd-2bcb-4bee-bc9e-1d33fc54199d",
+		"name": "Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"nicosolmo99\",\r\n    \"Password\":\"Afrika123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50028/api/login/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"login",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

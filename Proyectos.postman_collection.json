@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "d89a7c79-ba57-4c87-8bd3-1c21f214301b",
+		"name": "Proyectos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener objeto",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMnxBbmdlbGljYTIwMzB8MiIsIm5iZiI6MTYxNjk5NDgzMCwiZXhwIjoxNjE2OTk2NjMwLCJpYXQiOjE2MTY5OTQ4MzAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDI4In0.qr6ym_sEFW7lNBWQ3nuiJQPxwVmMPMRg9dnx-CApOUM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/proyecto/GetObj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"proyecto",
+						"GetObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Proyecto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMnxBbmdlbGljYTIwMzB8MiIsIm5iZiI6MTYxNjk5OTM0NiwiZXhwIjoxNjE3MDAxMTQ2LCJpYXQiOjE2MTY5OTkzNDYsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDI4In0.f5m8S618PQiomNiEoRO0rp-YrQtIhVG-sr6vaaYSnnc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Id\": 2,\r\n        \"Nombre\": \"Proyecto 2-Actualizado\",\r\n        \"Descripcion\": \"Este Proyecto es de prueba 2\",\r\n        \"FechaInicio\": \"2021-03-29T00:21:21.2769248-05:00\",\r\n        \"FechaFin\": \"2021-03-31T00:21:21.2769248-05:00\",\r\n        \"Id_Operario\": 2,\r\n        \"Estado\": 0,\r\n        \"LstEstado\": [\r\n            {\r\n                \"Id\": 0,\r\n                \"Estado\": \"En Proceso\"\r\n            },\r\n            {\r\n                \"Id\": 1,\r\n                \"Estado\": \"Finalizado\"\r\n            }\r\n        ],\r\n        \"LstOperadores\": [\r\n            {\r\n                \"Id\": 2,\r\n                \"Nombre\": \"Angelica\",\r\n                \"Apellido\": \"Garzon\",\r\n                \"Rol_Id\": 0,\r\n                \"Rol\": null,\r\n                \"Usuario\": \"Angelica2030\",\r\n                \"Correo\": \"angelicagarzon0219@gmail.com\",\r\n                \"Estado\": null\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50028/api/proyecto/Create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"proyecto",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Prjects",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE2OTk3NzkxLCJleHAiOjE2MTY5OTk1OTEsImlhdCI6MTYxNjk5Nzc5MSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.K-5R7nroyYseZDLFaA5elvakNuPFmyzxnIgbQECgqik",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/proyecto/Delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"proyecto",
+						"Delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizacion Proyecto Estado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMnxBbmdlbGljYTIwMzB8MiIsIm5iZiI6MTYxNjk5OTM0NiwiZXhwIjoxNjE3MDAxMTQ2LCJpYXQiOjE2MTY5OTkzNDYsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDI4In0.f5m8S618PQiomNiEoRO0rp-YrQtIhVG-sr6vaaYSnnc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/proyecto/ChEstate/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"proyecto",
+						"ChEstate",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

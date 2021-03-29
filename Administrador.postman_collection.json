@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "152e7e66-ea17-492c-94ec-e304f3052abf",
+		"name": "Administrador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin cambia estados",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE2OTkyODQyLCJleHAiOjE2MTY5OTQ2NDIsImlhdCI6MTYxNjk5Mjg0MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.wCt0RcovmQYRSlahFFeQAsAiM3wnPNtkbJUc4qqGc3g",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/usuario/ChEstate/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"usuario",
+						"ChEstate",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE2OTkyODQyLCJleHAiOjE2MTY5OTQ2NDIsImlhdCI6MTYxNjk5Mjg0MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.wCt0RcovmQYRSlahFFeQAsAiM3wnPNtkbJUc4qqGc3g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/proyecto/List",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"proyecto",
+						"List"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta proyectos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE2OTkyODQyLCJleHAiOjE2MTY5OTQ2NDIsImlhdCI6MTYxNjk5Mjg0MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.wCt0RcovmQYRSlahFFeQAsAiM3wnPNtkbJUc4qqGc3g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/proyecto/List",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"proyecto",
+						"List"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Tareas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE2OTk0NjkzLCJleHAiOjE2MTY5OTY0OTMsImlhdCI6MTYxNjk5NDY5MywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.nPQ3LbMyl8yllZKhdK9wusK0pq4NNiSebGQwvno--pI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/tarea/List",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"tarea",
+						"List"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Usuarios Operadores",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE3MDAwMzA0LCJleHAiOjE2MTcwMDIxMDQsImlhdCI6MTYxNzAwMDMwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.KfekA_dJj3y9wPeJYY8KX1FauTIPolAeNrK0x0bjitA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Id\": 0,\r\n        \"Nombre\": \"Cristina\",\r\n        \"Apellido\": \"Espitia\",\r\n        \"Rol_Id\": 2,\r\n        \"ListaRol\": [\r\n            {\r\n                \"Id\": 1,\r\n                \"Rol\": \"Administrador\"\r\n            },\r\n            {\r\n                \"Id\": 2,\r\n                \"Rol\": \"Operario\"\r\n            }\r\n        ],\r\n        \"Usuario\": \"Cristina\",\r\n        \"Correo\": \"hosolarte@poligran.edu.co\",\r\n        \"Contrasena\": \"Afrika123\",\r\n        \"Estado\": 1,\r\n        \"ListaEstados\": [\r\n            {\r\n                \"Id\": 0,\r\n                \"Estado\": \"Inactivo\"\r\n            },\r\n            {\r\n                \"Id\": 1,\r\n                \"Estado\": \"Activo\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50028/api/usuario/Create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"usuario",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener el objeto a enviar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE3MDAwMzA0LCJleHAiOjE2MTcwMDIxMDQsImlhdCI6MTYxNzAwMDMwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.KfekA_dJj3y9wPeJYY8KX1FauTIPolAeNrK0x0bjitA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/usuario/GetObj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"usuario",
+						"GetObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password OBJ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE3MDAwMzA0LCJleHAiOjE2MTcwMDIxMDQsImlhdCI6MTYxNzAwMDMwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.KfekA_dJj3y9wPeJYY8KX1FauTIPolAeNrK0x0bjitA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/usuario/ObjChPass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"usuario",
+						"ObjChPass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Pass",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE3MDAwMzA0LCJleHAiOjE2MTcwMDIxMDQsImlhdCI6MTYxNzAwMDMwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.KfekA_dJj3y9wPeJYY8KX1FauTIPolAeNrK0x0bjitA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NombreUsuario\": \"nicosolmo99\",\r\n    \"Correo\": \"nicolassolarte99@gmail.com\",\r\n    \"Password\": \"hola123\",\r\n    \"NewPasswrd\": \"Afrika123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50028/api/usuario/ChPass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"usuario",
+						"ChPass"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "e94604ae-e1ac-496a-9ec2-7b4942486339",
+		"name": "Tareas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener Obj Tareas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMnxBbmdlbGljYTIwMzB8MiIsIm5iZiI6MTYxNjk5NTgyOCwiZXhwIjoxNjE2OTk3NjI4LCJpYXQiOjE2MTY5OTU4MjgsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDI4In0.MkbszVy-XoDkdfl3a-l_pwwB18rBuqs-BQVFnhYdSYk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/tarea/GetObj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"tarea",
+						"GetObj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Tareas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMnxBbmdlbGljYTIwMzB8MiIsIm5iZiI6MTYxNjk5NzY1MCwiZXhwIjoxNjE2OTk5NDUwLCJpYXQiOjE2MTY5OTc2NTAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDI4In0.TE3WODB6BQdzDYwxDiIVNyoxdiS09u-oddrRR6nwIJs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Id\": 0,\r\n        \"Nombre\": \"Tarea2\",\r\n        \"Descripcion\": \"Tarea de prueba para el proyecto 2\",\r\n        \"Fecha_Ejecucion\": \"2021-03-29T01:40:18.5105752-05:00\",\r\n        \"Id_Proyecto\": 2,\r\n        \"LstProyecto\": [\r\n            {\r\n                \"Id\": 1,\r\n                \"Nombre\": \"Proyecto 1\",\r\n                \"Descripcion\": \"Este Proyecto es de prueba\",\r\n                \"FechaInicio\": \"2021-03-29T00:21:21.2769248\",\r\n                \"FechaFin\": \"2021-03-31T00:21:21.2769248\",\r\n                \"Id_Operario\": 2,\r\n                \"Operario\": \"Angelica Garzon\",\r\n                \"Estado\": false,\r\n                \"ValEstado\": \"En Proceso\"\r\n            }\r\n        ],\r\n        \"Estado\": 0,\r\n        \"ListaEstado\": [\r\n            {\r\n                \"Id\": 0,\r\n                \"Estado\": \"Pendiente\"\r\n            },\r\n            {\r\n                \"Id\": 1,\r\n                \"Estado\": \"Realizada\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50028/api/tarea/Create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"tarea",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tareas",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE2OTk3NzkxLCJleHAiOjE2MTY5OTk1OTEsImlhdCI6MTYxNjk5Nzc5MSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.K-5R7nroyYseZDLFaA5elvakNuPFmyzxnIgbQECgqik",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/tarea/Delete/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"tarea",
+						"Delete",
+						"4"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar tareas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMXxuaWNvc29sbW85OXwxIiwibmJmIjoxNjE2OTk4ODMxLCJleHAiOjE2MTcwMDA2MzEsImlhdCI6MTYxNjk5ODgzMSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAyOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgifQ.Hm80K8kXsMSGZKIh_sS_ITVrEcoHnverr6oiWH_4RRA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Id\": 3,\r\n        \"Nombre\": \"Tarea1-Actualizada\",\r\n        \"Descripcion\": \"Tarea de prueba para el proyecto 2\",\r\n        \"Fecha_Ejecucion\": \"2021-03-29T01:40:18.5105752-05:00\",\r\n        \"Id_Proyecto\": 2,\r\n        \"LstProyecto\": [\r\n            {\r\n                \"Id\": 1,\r\n                \"Nombre\": \"Proyecto 1\",\r\n                \"Descripcion\": \"Este Proyecto es de prueba\",\r\n                \"FechaInicio\": \"2021-03-29T00:21:21.2769248\",\r\n                \"FechaFin\": \"2021-03-31T00:21:21.2769248\",\r\n                \"Id_Operario\": 2,\r\n                \"Operario\": \"Angelica Garzon\",\r\n                \"Estado\": false,\r\n                \"ValEstado\": \"En Proceso\"\r\n            }\r\n        ],\r\n        \"Estado\": 0,\r\n        \"ListaEstado\": [\r\n            {\r\n                \"Id\": 0,\r\n                \"Estado\": \"Pendiente\"\r\n            },\r\n            {\r\n                \"Id\": 1,\r\n                \"Estado\": \"Realizada\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50028/api/tarea/Create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"tarea",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Estado Tareas",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMnxBbmdlbGljYTIwMzB8MiIsIm5iZiI6MTYxNjk5OTA0NCwiZXhwIjoxNjE3MDAwODQ0LCJpYXQiOjE2MTY5OTkwNDQsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMjgiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDI4In0.Fq8crlaslI3wXY2Wq3Y9VsbSopmrkp-h19DCzjYDZLg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:50028/api/tarea/ChEstate/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50028",
+					"path": [
+						"api",
+						"tarea",
+						"ChEstate",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
