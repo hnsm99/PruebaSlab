@@ -13,6 +13,6 @@ namespace PruebaSlab.Models.Proyecto
         public DateTime FechaInicio { get; set; }
         public DateTime FechaFin { get; set; }
         public int Id_Operario { get; set; }
-        public bool Estado { get; set; }
+        public int Estado { get; set; }
     }
 }

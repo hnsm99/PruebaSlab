@@ -163,6 +163,7 @@
     <Compile Include="Models\Usuario\UsuarioEdit.cs" />
     <Compile Include="Models\Usuario\UsuarioIndex.cs" />
     <Compile Include="Models\Usuario\UsuarioList.cs" />
+    <Compile Include="Models\Usuario\UsuarioPass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transaction\ProyectoTransaction.cs" />
     <Compile Include="Transaction\RolTransaction.cs" />

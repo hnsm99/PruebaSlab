@@ -24,5 +24,13 @@ namespace PruebaSlab.Utilities
             result = Convert.ToBase64String(encryted);
             return result;
         }
+
+        public string Desencriptar(string cadena)
+        {
+            string result = string.Empty;
+            byte[] decryted = Convert.FromBase64String(cadena);
+            result = System.Text.Encoding.Unicode.GetString(decryted);
+            return result;
+        }
     }
 }

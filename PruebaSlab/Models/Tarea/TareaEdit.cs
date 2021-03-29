@@ -12,6 +12,6 @@ namespace PruebaSlab.Models.Tarea
         public string Descripcion { get; set; }
         public DateTime Fecha_Ejecucion { get; set; }
         public int Id_Proyecto { get; set; }
-        public bool Estado { get; set; }
+        public int Estado { get; set; }
     }
 }

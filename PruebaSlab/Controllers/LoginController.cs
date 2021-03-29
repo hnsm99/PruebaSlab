@@ -1,5 +1,6 @@
 ﻿using PruebaSlab.Models;
 using PruebaSlab.Transaction;
+using PruebaSlab.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace PruebaSlab.Controllers
     public class LoginController : ApiController
     {
         TokenGenerator TG = new TokenGenerator();
-
+        Response response = new Response();
         [HttpGet]
         [Route("echoping")]
         public IHttpActionResult EchoPing()
@@ -39,6 +40,7 @@ namespace PruebaSlab.Controllers
             
             if (login==null)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
+            login.Password = response.Encriptar(login.Password);
             return Ok(TG.GenerateTokenAwt(login));
         }
     }

@@ -14,6 +14,6 @@ namespace PruebaSlab.Models.Usuario
         public string Usuario { get; set; }
         public string Correo { get; set; }
         public string Contrasena { get; set; }
-        public bool Estado { get; set; }
+        public int Estado { get; set; }
     }
 }
