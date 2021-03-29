@@ -51,7 +51,7 @@ namespace PruebaSlab.Transaction
             {
                 response.Successfully = true;
                 response.Code = 401;
-                response.Message = "Login incorrecto, verifique usuario y contraseña";
+                response.Message = "Login incorrecto o inactivo, verifique usuario y contraseña";
                 response.Result = "";
             }
             return response;

@@ -150,7 +150,7 @@ namespace PruebaSlab.Transaction
                     Proyecto Pro = DB.Proyecto.Where(x => x.Id == model.Id_Proyecto).FirstOrDefault();
                     if (T == null)
                     {
-                        if (Pro.Fecha_Fin >= model.Fecha_Ejecucion && Pro.Fecha_Inicio <= model.Fecha_Ejecucion && model.Fecha_Ejecucion > DateTime.Now)
+                        if (Pro.Fecha_Fin >= model.Fecha_Ejecucion && Pro.Fecha_Inicio <= model.Fecha_Ejecucion)
                         {
                             var ValEstado = LstEL.Where(x => x.Id == model.Estado).FirstOrDefault();
                             if (ValEstado != null)

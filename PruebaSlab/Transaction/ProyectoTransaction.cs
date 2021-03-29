@@ -34,7 +34,7 @@ namespace PruebaSlab.Transaction
                 DB = new SlabEntities();
                 DB.Configuration.LazyLoadingEnabled = true;
                 response = new Response();
-                Rol R = DB.Rol.Where(y => y.Rol1.ToUpper().Equals("OPERADOR")).FirstOrDefault();
+                Rol R = DB.Rol.Where(y => y.Rol1.ToUpper().Equals("OPERARIO")).FirstOrDefault();
                 List<Usuario> U = DB.Usuario.Where(x => x.Rol_Id == R.Id && x.Estado == true).ToList();
                 Proyecto P = id != null ? DB.Proyecto.Where(x => x.Id == id).FirstOrDefault() : null;
                 if (U != null)
@@ -322,8 +322,8 @@ namespace PruebaSlab.Transaction
                                 }
                                 msg.From=new MailAddress(ConfigurationManager.AppSettings["MailFrom"]);
                                 string fromPassword = ConfigurationManager.AppSettings["MailPassword"];
-                                msg.Subject = "Creacion de Usuario en SlabCode.";
-                                msg.Body = "El proyecto " + PR.Nombre + " ha finalizado con exito.";
+                                msg.Subject = "Proyecto finalizado.";
+                                msg.Body = "El proyecto: " + PR.Nombre + ", ha finalizado con exito.";
 
                                 var smtp = new SmtpClient
                                 {

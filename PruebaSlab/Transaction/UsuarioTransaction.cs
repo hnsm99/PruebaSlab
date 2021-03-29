@@ -158,7 +158,7 @@ namespace PruebaSlab.Transaction
                         var toAddress = new MailAddress(model.Correo, model.Nombre + ' ' + model.Apellido);
                         string fromPassword = ConfigurationManager.AppSettings["MailPassword"];
                         const string subject = "Creacion de Usuario en SlabCode.";
-                        string body = "Su contraseña es: " + "Slab" + model.Usuario + "Code";
+                        string body = "Su usuario es: "+model.Usuario+" y su contraseña es: " + "Slab" + model.Usuario + "Code";
 
                         var smtp = new SmtpClient
                         {
